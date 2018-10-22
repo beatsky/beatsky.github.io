@@ -3,10 +3,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>LiVE is Smile Always</title>
+    <title>Linux+Nodejs+Nginx+MongoDB环境部署及网站发布 | LiVE is Smile Always</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="">
-    <meta name="description" content="博客">
+    <meta name="description" content="Node.js作为一个Javascript运行环境，使js成功的成为了一门运行在前后端的语言。node的出现使很多前端开发人员也有了自己后端语言。也让更多的前后端程序员有了新的工具。
+废话不多说，上干货吧！
+博主使的是centos7的服务环境
+安装Nginxinstall nginx```12345678910## 安装nvm由于node生态圈的繁华，各种工具，框架所依赖的版本也不尽相同，使用nvm可以随时切换node版本nvm github：https://github.com/creationix/nvm使用curl```curl -o- https://raw.githubusercontent.com/creat...">
     
         <link rel="icon" href="/favicon.ico">
     
@@ -40,26 +43,18 @@
 <div id="content-outer">
     <div id="content-inner">
         <div class="clearfix">
-    
-    <div id="recent-posts">
-        
-            <div class="post-item">
-                <h1>
-                    <a href="/2017/09/14/Linux-Nodejs-Nginx-MongoDB环境部署及网站发布/">
-                        Linux+Nodejs+Nginx+MongoDB环境部署及网站发布
-                    </a>
-                </h1>
-                <div class="create">
-                    <span>创建于</span>
-                    
-                        <time datetime="2017-09-14T07:26:12.000Z">
-                            2017-09-14
-                        </time>
-                    
-                    
-                </div>
-                
-                    <p>Node.js作为一个Javascript运行环境，使js成功的成为了一门运行在前后端的语言。node的出现使很多前端开发人员也有了自己后端语言。也让更多的前后端程序员有了新的工具。</p>
+    <article id="post">
+        <h1>Linux+Nodejs+Nginx+MongoDB环境部署及网站发布</h1>
+        <div class="create">
+            <span>创建于</span>
+            
+                <time datetime="2017-09-14T07:26:12.000Z">
+                    2017-09-14
+                </time>
+            
+            
+        </div>
+        <p>Node.js作为一个Javascript运行环境，使js成功的成为了一门运行在前后端的语言。node的出现使很多前端开发人员也有了自己后端语言。也让更多的前后端程序员有了新的工具。</p>
 <p>废话不多说，上干货吧！</p>
 <p>博主使的是centos7的服务环境</p>
 <h2 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h2><figure class="highlight plain"><figcaption><span>install nginx```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 安装nvm</div><div class="line"></div><div class="line">由于node生态圈的繁华，各种工具，框架所依赖的版本也不尽相同，使用nvm可以随时切换node版本</div><div class="line"></div><div class="line">nvm github：https://github.com/creationix/nvm</div><div class="line"></div><div class="line">使用curl</div><div class="line"></div><div class="line">```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</div></pre></td></tr></table></figure>
@@ -89,95 +84,21 @@
 <p><code>pm2 start www</code></p>
 <p>当前网站便开始运行了</p>
 
-                
-                <div class="readmore">
-                    <a href="/2017/09/14/Linux-Nodejs-Nginx-MongoDB环境部署及网站发布/">
-                        阅读更多
-                    </a>
-                </div>
-            </div>
-        
-    </div>
-
-
-    <div id="content-aside">
-    <div class="content-aside-owner">
-        <div id="owner">
-    <div class="avatar-bg">
-        <div class="index-page">
-            <div class="banner">
-                <div class="slide slide1">
-                    <div class="bg-wrapper">
-                        <div class="bg" id="container_left">
-                            <div id="canvas_left"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide slide2">
-                    <div class="bg-wrapper">
-                        <div class="bg" id="container_right">
-                            <div id="canvas_right"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <ul class="tags-category-list"><li class="tags-category-list-item"><a class="tags-category-list-link" href="/tags/Node/">Node</a></li></ul>
         </div>
-    </div>
-    <a href="/"><img class="avatar" src="/images/avatar.jpg" alt=""></a>
-    <a href="/"><h3 class="author">Beatsky</h3></a>
-    <h4>今日もいい日だっ。</h4>
-    <div class="social">
+        <div class="bottom-line"></div>
         
-            
-              <a href="https://github.com/beatsky" title="github" class="fa fa-github" target="_blank"></a>
-            
+
         
-            
-              <a href="#" title="weibo" class="fa fa-weibo" target="_blank"></a>
-            
+    </article>
+    <div id="toc">
+        
+            <h2>文章目录</h2>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Nginx"><span class="toc-number">1.</span> <span class="toc-text">安装Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用nvm管理NodeJs"><span class="toc-number">2.</span> <span class="toc-text">使用nvm管理NodeJs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网站发布"><span class="toc-number">3.</span> <span class="toc-text">网站发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#示例"><span class="toc-number">4.</span> <span class="toc-text">示例</span></a></li></ol>
         
     </div>
 </div>
-    </div>
-    
-        <div class="content-aside-about">
-            <h2>
-                <a href="/about">关于</a>
-            </h2>
-        </div>
-    
-    <div class="content-aside-tags">
-        <h2>
-            <a href="/tags">
-                标签
-                <sup style="font-size: 12px">
-                    [1]
-                </sup>
-            </a>
-        </h2>
-    </div>
-    
-<aside id="categories">
-    <h2>分类</h2>
-    
-        <p>None.</p>
-    
-</aside>
-
-    
-<aside id="acchives">
-    <h2>归档</h2>
-    
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li></ul>
-    
-</aside>
-
-</div>
-
-</div>
-<nav id="pagination" class="clearfix">
-    <span class="page-number current">1</span>
-</nav>
 
     </div>
 </div>
@@ -190,8 +111,8 @@
 <script src="/lib/js/waterrippleeffect.min.js"></script>
 <script src="/js/header-bg.main.js"></script>
 
-    <script src="/lib/js/cav.js"></script>
-    <script src="/js/avatar-bg.main.js"></script>
+    <script src="/lib/js/smooth-scroll.min.js"></script>
+    <script src="/js/toc.main.js"></script>
 
 </body>
 </html>
